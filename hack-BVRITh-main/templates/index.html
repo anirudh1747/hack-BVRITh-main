@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- animate.style cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        #one{
+    background-color: #1B1C1D;
+    height: 720px;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-fluid{
+    padding: 2% 15% 10%;
+    
+}
+.navbar-brand{
+    font: 20px;
+    font-weight: bold;
+    margin-left: 180px;
+}
+
+.health{
+    width: 5%;
+}
+.navbar{
+    padding: 0 0 4rem;
+}
+.nav-item{
+    padding: 0 15px;
+    border-bottom: 2px solid transparent;
+    color: white;
+}
+.nav-item:hover {
+    border-bottom: 2px solid white;
+  }
+.nav-link{
+    font-size: 17px;
+    font-weight: 600;
+}
+.navbar-collapse{
+    margin-right: 150px;
+}
+.topic{
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.line{
+    color: white;
+    width: 50%;
+    font-size: 30px;
+    position: absolute;
+    top: 47%;
+    left: 25%;
+    text-align: center;
+}
+.btn-content{
+    width: 200px;
+    height: 50px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #2185D0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 62%;
+    left: 43%;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.btn-content:hover {
+    transform: scale(1.2); 
+  }
+.arrow{
+    width:10%;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+#two{
+    width: 100%;
+    height: 1000px;
+    background-color: #1B1C1D;
+}
+.skill-row{
+    width: 73%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+p,h3{
+    color: white;
+}
+
+
+    </style>
+</head>
+<body>
+    <section id="one">
+        <div class="container-fluid">
+            <nav class="navbar  navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="">SvasthaSetu <img class="health" src="images/health.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="problem.html">Problem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="solution.html">Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="getvals">Model</a>
+                    </li>
+                </ul>
+            </div>
+            </nav>  
+            
+            <div class="content">
+                <span class="topic animate__animated animate__backInDown animate__slow">Rural Health Care</span>
+                <span class="line animate__animated animate__backInLeft animate__slow">Want to know more about the problems faced by health care in Rural area</span>
+                <button class="btn-content animate__animated animate__slideInRight animate__slow">Get Started<img class="arrow" src="images/arrow.png" alt=""></button>
+                
+            </div>
+        </div>
+      </section>
+</body>
+</html>

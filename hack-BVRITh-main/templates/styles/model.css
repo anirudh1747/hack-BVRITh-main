@@ -1,0 +1,155 @@
+<style>
+#one{
+    background-color: #1B1C1D;
+    /* height: 720px; */
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-fluid{
+    /* padding: 2% 15% 10%; */
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
+}
+.navbar-brand{
+    font: 20px;
+    font-weight: bold;
+    margin-left: 180px;
+}
+
+.health{
+    width: 5%;
+}
+.navbar{
+    padding: 0 0 4rem;
+}
+.nav-item{
+    padding: 0 15px;
+    border-bottom: 2px solid transparent;
+    color: white;
+}
+.nav-item:hover {
+    border-bottom: 2px solid white;
+  }
+.nav-link{
+    font-size: 17px;
+    font-weight: 600;
+}
+.navbar-collapse{
+    margin-right: 150px;
+}
+.topic{
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.line{
+    color: white;
+    width: 50%;
+    font-size: 30px;
+    position: absolute;
+    top: 47%;
+    left: 25%;
+    text-align: center;
+}
+.btn-content{
+    width: 200px;
+    height: 50px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #2185D0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 62%;
+    left: 43%;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.btn-content:hover {
+    transform: scale(1.2); 
+  }
+.arrow{
+    width:10%;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+#two{
+    width: 100%;
+    height: 1000px;
+    background-color: #1B1C1D;
+}
+.skill-row{
+    width: 73%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+.katana{
+    float: left;
+    margin-right: 20px;
+}
+.sake{
+    float: right;
+    margin-left: 20px;
+}
+p,h3{
+    color: white;
+}
+.doc-head{
+    margin-left: 210px;
+    margin-top:50px;
+    font-family: Rubik;
+}
+
+
+/* navbar css */
+
+.field{
+    width: 300px;
+    margin-left: 190px;
+    margin-top: 50px;
+}
+.doctor-state{
+    font-size: 20px;
+    font-weight: 400;
+    color: #1B1C1D;
+}
+label{
+    margin-right: 20px;
+}
+
+.ui-d, .ui-n, .ui-p{
+    margin: 30px;
+    margin-left: 190px;
+}
+
+.form-d,.form-n,.form-p{
+    margin-left: 20px;
+}
+.phc-d{
+    
+}
+.nurse{
+    position: absolute;
+    left: 30%;
+    bottom: 0%;
+    margin-top: 50px;
+}
+.pharmacist{
+    position: absolute;
+    left: 60%;
+    bottom: 15%;
+}
+.nurse-head{
+    margin-left: 500px;
+    margin-top:50px;
+    font-family: Rubik;
+}
+</style>

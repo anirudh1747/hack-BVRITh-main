@@ -1,0 +1,112 @@
+#one{
+    background-color: #1B1C1D;
+    height: 720px;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* .container-fluid{
+    padding-bottom: 50px;
+    
+} */
+.navbar-brand{
+    font: 20px;
+    font-weight: bold;
+    margin-left: 180px;
+    padding: 0 0 0;
+    padding-bottom: 50px;
+}
+
+.health{
+    width: 5%;
+}
+.navbar{
+    padding: 0 0 4rem;
+}
+.nav-item{
+    padding: 0 15px;
+    border-bottom: 2px solid transparent;
+    color: white;
+}
+.nav-item:hover {
+    border-bottom: 2px solid white;
+  }
+.nav-link{
+    font-size: 17px;
+    font-weight: 600;
+}
+.navbar-collapse{
+    margin-right: 150px;
+}
+.topic{
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.line{
+    color: white;
+    width: 50%;
+    font-size: 30px;
+    position: absolute;
+    top: 47%;
+    left: 25%;
+    text-align: center;
+}
+.btn-content{
+    width: 200px;
+    height: 50px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #2185D0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 62%;
+    left: 43%;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+#two{
+    width: 100%;
+    height: 1000px;
+    background-color: #1B1C1D;
+}
+
+
+p,h3{
+    color: white;
+}
+
+/* ****************** navbar css till here ******************* */
+
+.problem-content{
+    font-size: large;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+  
+    color: white;
+    animation-duration: 5s;
+}
+
+.problem-content>p{
+    line-height: 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+}
+.con{
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.5); 
+  }
+.problem-content{
+padding-left: 200px;
+    padding-right: 200px;
+}

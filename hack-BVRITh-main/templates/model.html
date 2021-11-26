@@ -1,0 +1,406 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="model.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- semantic ui cdn -->
+    <!-- <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css"> -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css"></link>
+
+
+      <!-- animate.style cdn -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<style>
+#one{
+    background-color: #1B1C1D;
+    /* height: 720px; */
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger!important;
+    
+}
+
+.container-fluid{
+    /* padding: 2% 15% 10%; */
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
+}
+.navbar-brand{
+    font: 20px;
+    font-weight: bold;
+    margin-left: 180px;
+}
+
+.health{
+    width: 5%;
+}
+.navbar{
+    padding: 0 0 4rem;
+}
+.nav-item{
+    padding: 0 15px;
+    border-bottom: 2px solid transparent;
+    color: white;
+}
+.nav-item:hover {
+    border-bottom: 2px solid white;
+  }
+.nav-link{
+    font-size: 17px;
+    font-weight: 600;
+}
+.navbar-collapse{
+    margin-right: 150px;
+}
+.topic{
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.line{
+    color: white;
+    width: 50%;
+    font-size: 30px;
+    position: absolute;
+    top: 47%;
+    left: 25%;
+    text-align: center;
+}
+.btn-content{
+    width: 200px;
+    height: 50px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #2185D0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 62%;
+    left: 43%;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.btn-content:hover {
+    transform: scale(1.2); 
+  }
+.arrow{
+    width:10%;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+#two{
+    width: 100%;
+    height: 1000px;
+    background-color: #1B1C1D;
+}
+.skill-row{
+    width: 73%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+.katana{
+    float: left;
+    margin-right: 20px;
+}
+.sake{
+    float: right;
+    margin-left: 20px;
+}
+p,h3{
+    color: white;
+}
+.doc-head{
+    margin-left: 210px;
+    margin-top:50px;
+    font-family: Rubik;
+}
+
+
+/* navbar css */
+
+.field{
+    width: 300px;
+    margin-left: 190px!important;
+}
+.doctor-state{
+    font-size: 20px;
+    font-weight: 400;
+    color: #1B1C1D;
+}
+label{
+    margin-right: 20px;
+}
+
+.ui-d, .ui-n, .ui-p{
+    margin: 30px;
+    margin-left: 190px;
+}
+
+.form-d,.form-n,.form-p{
+    margin-left: 20px;
+}
+/* .phc-d{
+    
+} */
+
+.nurse-head{
+    margin-left: 500px;
+    margin-top:50px;
+    font-family: Rubik;
+}
+.attributes{
+    display: flex;
+    flex: 0.7;
+    flex-wrap: wrap;
+    flex-basis:300px ;
+}
+
+
+.doctor{
+    width: fit-content;
+}
+
+.nurse{
+    width: fit-content;
+}
+
+.pharmacist{
+    width: fit-content;
+     margin-left: 300px; 
+}
+
+label{
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<form action="\getvals" method="post">
+  <section id="one">
+    <div class="container-fluid">
+        <nav class="navbar  navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="">SvasthaSetu  <img class="health" src="images/health.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="problem.html">Problem</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="solution.html">Solution</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="model.html">Model</a>
+                </li>
+            </ul>
+        </div>
+        </nav>  
+        
+     
+    </div>
+  </section>
+
+
+    <div class="doctor">
+      <h1 class="doc-head">Doctor</h1>
+        <div class="ui form form-d">
+            <div class="field">
+              <label class="doctor-state">State</label>
+              <select class="ui search dropdown"  name="state_d">
+                <option value="">Select state</option>
+                <option value="0">Andhra Pradesh</option>
+                <option value="1">Arunachal Pradesh	 </option>
+                <option value="2">Assam</option>
+                <option value="3">Bihar</option>
+                <option value="4">Chhattisgarh </option>
+                <option value="5">Delhi	</option>
+                <option value="6">Goa</option>
+                <option value="7">Gujarat</option>
+                <option value="8">Haryana</option>
+                <option value="9">Himachal Pradesh	</option>
+                <option value="10">Jammu and Kashmir	</option>
+                <option value="11">Jharkhand</option>
+                <option value="12">Karnataka</option>
+                <option value="13">Kerala</option>
+                <option value="14">Madhya Pradesh	</option>
+                <option value="15">Maharashtra</option>
+                <option value="16">Manipur</option>
+                <option value="17">Meghalaya</option>
+                <option value="18">Mizoram</option>
+                <option value="19">Nagaland</option>
+                <option value="20">Orissa</option>
+                <option value="21">Punjab</option>
+                <option value="22">Rajasthan</option>
+                <option value="23">Sikkim</option>
+                <option value="24">Tamil Nadu	</option>
+                <option value="25">Tripura</option>
+                <option value="26">Uttar Pradesh	</option>
+                <option value="27">Uttarakhand	</option>
+                <option value="28">West Bengal	</option>
+                <option value="29">Telangana</option>
+            </select>
+        </div>
+        <div class="ui input ui-d">
+          <label for="phc-d">PHC</label>
+          <input type="text" id="phc-d" name="phc-d" value="" placeholder="PHC...">
+        </div><br>
+        <div class="ui input ui-d">
+          <label for="inpo-d">in-position</label>
+          <input type="text" id="inpo-d" name="inpo-d" value="" placeholder="in-position...">
+        </div><br>
+        <div class="ui input ui-d">
+          <label for="vac-d">PHC</label>
+          <input type="text" id="vac-d" name="vac-d" value="" placeholder="vacant...">
+        </div><br>
+
+      </div>
+    </div>
+    
+    <div class="nurse">
+      <h1 class="doc-head">Nurse</h1>
+        <div class="ui form form-n">
+            <div class="field">
+              <label>state</label>
+              <select class="ui search dropdown"  name="state_n">
+                <option value="">Select state</option>
+                <option value="0">Andhra Pradesh</option>
+                <option value="1">Arunachal Pradesh	 </option>
+                <option value="2">Assam</option>
+                <option value="3">Bihar</option>
+                <option value="4">Chhattisgarh </option>
+                <option value="5">Delhi	</option>
+                <option value="6">Goa</option>
+                <option value="7">Gujarat</option>
+                <option value="8">Haryana</option>
+                <option value="9">Himachal Pradesh	</option>
+                <option value="10">Jammu and Kashmir	</option>
+                <option value="11">Jharkhand</option>
+                <option value="12">Karnataka</option>
+                <option value="13">Kerala</option>
+                <option value="14">Madhya Pradesh	</option>
+                <option value="15">Maharashtra</option>
+                <option value="16">Manipur</option>
+                <option value="17">Meghalaya</option>
+                <option value="18">Mizoram</option>
+                <option value="19">Nagaland</option>
+                <option value="20">Orissa</option>
+                <option value="21">Punjab</option>
+                <option value="22">Rajasthan</option>
+                <option value="23">Sikkim</option>
+                <option value="24">Tamil Nadu	</option>
+                <option value="25">Tripura</option>
+                <option value="26">Uttar Pradesh	</option>
+                <option value="27">Uttarakhand	</option>
+                <option value="28">West Bengal	</option>
+                <option value="29">Telangana</option>
+            </select>
+        </div>
+        <div class="ui input ui-n">
+          <label for="phc-n">PHC</label>
+          <input type="text" id="phc-n" name="phc-n" value="" placeholder="PHC...">
+        </div><br>
+        <div class="ui input ui-n">
+          <label for="req-d">required</label>
+          <input type="text" id="req-n" name="req-n" value="" placeholder="required...">
+        </div><br>
+        <div class="ui input ui-n">
+          <label for="sfl-d">shortfall</label>
+          <input type="text" id="sfl-n" name="sfl-n" value="" placeholder="shortfall...">
+        </div><br>
+        <div class="ui input ui-n">
+          <label for="vac-n">vacant</label>
+          <input type="text" id="vac-n" name="vac-n" value="" placeholder="vacant...">
+        </div><br>
+
+      </div>
+    </div>
+    
+    <div class="Pharmacist">
+      <h1 style="margin-left:200px">pharmacist</h1>
+        <div class="ui form form-p">
+            <div class="field">
+              <label>state</label>
+              <select class="ui search dropdown"  name="state_p">
+                <option value="" name="state">Select state</option>
+                <option value="0" name="state">Andhra Pradesh</option>
+                <option value="1" name="state">Arunachal Pradesh	 </option>
+                <option value="2" name="state">Assam</option>
+                <option value="3" name="state">Bihar</option>
+                <option value="4" name="state">Chhattisgarh </option>
+                <option value="5" name="state">Delhi	</option>
+                <option value="6" name="state">Goa</option>
+                <option value="7" name="state">Gujarat</option>
+                <option value="8" name="state">Haryana</option>
+                <option value="9" name="state">Himachal Pradesh	</option>
+                <option value="10" name="state">Jammu and Kashmir	</option>
+                <option value="11">Jharkhand</option>
+                <option value="12">Karnataka</option>
+                <option value="13">Kerala</option>
+                <option value="14">Madhya Pradesh	</option>
+                <option value="15">Maharashtra</option>
+                <option value="16">Manipur</option>
+                <option value="17">Meghalaya</option>
+                <option value="18">Mizoram</option>
+                <option value="19">Nagaland</option>
+                <option value="20">Orissa</option>
+                <option value="21">Punjab</option>
+                <option value="22">Rajasthan</option>
+                <option value="23">Sikkim</option>
+                <option value="24">Tamil Nadu	</option>
+                <option value="25">Tripura</option>
+                <option value="26">Uttar Pradesh	</option>
+                <option value="27">Uttarakhand	</option>
+                <option value="28">West Bengal	</option>
+                <option value="29">Telangana</option>
+            </select>
+        </div>
+        <div class="ui input ui-p">
+          <label for="phc-p">PHC</label>
+          <input type="text" id="phc-p" name="phc-p" value="" placeholder="PHC...">
+        </div><br>
+        <div class="ui input ui-p">
+          <label for="req-p">required</label>
+          <input type="text" id="req-p" name="req-p" value="" placeholder="required...">
+        </div><br>
+        <div class="ui input ui-p">
+          <label for="sfl-p">shortfall</label>
+          <input type="text" id="sfl-p" name="sfl-p" value="" placeholder="shortfall...">
+        </div><br>
+        <div class="ui input ui-p">
+          <label for="sfl-p">in_position</label>
+          <input type="text" id="inpo-d" name="inpo-d" value="" placeholder="in position...">
+        </div><br>
+      </div>
+    </div>
+    <button class="tech-submit btn btn-light btn-outline" type="submit" href="/final">submit</button>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+
+</form>
+<p style="color:black"> Staff(Doctors,Nurses,Pharmacists): {{result}} </p>
+</body>
+</html>
